@@ -1,6 +1,5 @@
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
 html{
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #eae7de;
 }
@@ -8,8 +7,6 @@ html{
 /* Header */
 .nav {
     padding: 3rem 5% 2.5rem;
-    display: flex;
-    justify-content: center;
     border-bottom: 1px solid #051619;
     position: relative;
 }
@@ -17,22 +14,33 @@ html{
 .nav .homebtn{
     width: 226px;
     display: inline-block;
-    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
-/* .nav .nav-inner{
+.nav .nav-inner{
+    display: flex;
+    justify-content: flex-end;
+}
 
-}
-/* .nav .navlist .box-1,.nav .navlist .box-2 {
+.nav .navlist .box {
     width: 50px;
     height: 50px;
     border: 1px solid #051619;
-    
-} */
-/* .nav .navlist {
-    
+    float: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+}
+.nav .navlist .box:nth-child(2){
+    font-size: 25px;
+    margin-left: -1px;
 }
 
-.nav .navlist .box-1,.nav .navlist .box-2:after{content: ''; clear: both;display: block;} */
+.nav .navlist:after{content: ''; clear: both;display: block;}
+
+
 
 /* SECTION */
 
@@ -68,7 +76,7 @@ html{
     box-sizing: border-box;
 }
 
-.oragnebox-inner{
+.orangebox-inner{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 5%;
@@ -80,7 +88,18 @@ html{
     font-size: 1.125rem;
     font-weight: bold;
 }
-.orangebox-inner .couple{
+.orangebox-inner .single{
     margin-top: 1rem;
 }
+/* FORM */
 
+.orangebox .orangebox-inner .suscribe{
+    margin-top: 1.5rem;
+}
+
+.orangebox .orangebox-inner .inputbox-inner{
+    margin-bottom: 0.5em;
+    width: 452px;
+    padding:10px 40px 11px 1.5rem;
+    border: 1px solid #000;
+}
