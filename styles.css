@@ -1,0 +1,86 @@
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html{
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #eae7de;
+}
+
+/* Header */
+.nav {
+    padding: 3rem 5% 2.5rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #051619;
+    position: relative;
+}
+
+.nav .homebtn{
+    width: 226px;
+    display: inline-block;
+    
+}
+/* .nav .nav-inner{
+
+}
+/* .nav .navlist .box-1,.nav .navlist .box-2 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #051619;
+    
+} */
+/* .nav .navlist {
+    
+}
+
+.nav .navlist .box-1,.nav .navlist .box-2:after{content: ''; clear: both;display: block;} */
+
+/* SECTION */
+
+.container{
+    position: relative;
+}
+.container .hedgehog{
+    position: absolute;
+    bottom: -9rem;
+    left: 50%;
+    width: 100%;
+    max-width: 530px;
+    margin-left: 60px;
+}
+.container .slogan {
+    padding: 1rem 0;
+    border-bottom: 1px solid #051619;
+    font-size: 3rem;
+    letter-spacing: -.025rem;
+}
+
+.container .slogan .slogan-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+    font-weight: bold;
+    }
+
+.container .orangebox{
+    padding: 2rem 0 3rem;
+    background: #ff6b00;
+    box-sizing: border-box;
+}
+
+.oragnebox-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.orangebox-inner .txtmsg{
+    max-width: 560px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.orangebox-inner .couple{
+    margin-top: 1rem;
+}
+
