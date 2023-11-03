@@ -1,52 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>뉴닉 Newneek</title>
-    <link rel="shortcut icon" href="/media/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="shortcut icon" href="/media/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="tophead"><a href=""><img src="/media/banner-imn.c026394d.png" alt=""></a></div>
-        <nav class="nav">
-            <div class="nav-inner">
-                <a class="homebtn" href=""><img src="/media/logo.90f7555f.png" alt=""></a>
-                <ul class="navlist">
-                    <li class="box box-1"><a href=""><i class="iconsrch bi bi-search"></i></a></li>
-                    <li class="box box-2"><a href=""><i class="bi bi-person-badge"></i></a></li>
-                </ul>
-            </div>    
-        </nav>
-        
+      <div class="tophead">
+        <a href=""><img src="/media/banner-imn.c026394d.png" alt="" /></a>
+      </div>
+      <nav class="nav">
+        <div class="nav-inner">
+          <a class="homebtn" href=""
+            ><img src="/media/logo.90f7555f.png" alt=""
+          /></a>
+          <ul class="navlist">
+            <li class="box box-1">
+              <a href=""><i class="iconsrch bi bi-search"></i></a>
+            </li>
+            <li class="box box-2">
+              <a href=""><i class="bi bi-person-badge"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <section class="container">
-        <div class="hedgehog">
-            <img src="/media/gosum-home.2af8a9fb.png" alt="">
-        </div>
-        <h1 class="slogan">
-            <div class="slogan-inner">
-                우리가 시간이 없지,세상이 안 궁금하냐!
+      <div class="hedgehog">
+        <img src="/media/gosum-home.2af8a9fb.png" alt="" />
+      </div>
+      <h1 class="slogan">
+        <div class="slogan-inner">우리가 시간이 없지,세상이 안 궁금하냐!</div>
+      </h1>
+      <div class="orangebox">
+        <div class="orangebox-inner">
+          <p class="txtmsg">✨지금 575,876명이 뉴닉을 읽고 있어요.</p>
+          <p class="txtmsg single">
+            세상 돌아가는 소식, 알고는 싶지만 신문 볼 새 없이 바쁜 게 우리 탓은
+            아니잖아요!
+          </p>
+          <p class="txtmsg">
+            월/화/수/목/금 아침마다 세상 돌아가는 소식을 메일로 받아보세요.
+          </p>
+          <form action="" class="suscribe">
+            <div class="inputbox">
+              <input
+                type="email"
+                class="inputbox-inner"
+                placeholder="이메일 주소"
+              />
             </div>
-        </h1>
-        <div class="orangebox">
-            <div class="orangebox-inner">
-                <p class="txtmsg">✨지금 575,876명이 뉴닉을 읽고 있어요.</p>
-                <p class="txtmsg single">세상 돌아가는 소식, 알고는 싶지만 신문 볼 새 없이 바쁜 게 우리 탓은 아니잖아요!</p>
-                <p class="txtmsg">월/화/수/목/금 아침마다 세상 돌아가는 소식을 메일로 받아보세요.</p>
-                <form action="" class="suscribe">
-                    <div class="inputbox"><input type="email" class="inputbox-inner" placeholder="이메일 주소"></div>
-                    <div class="inputbox"><input type="text" class="inputbox-inner inputname" placeholder="닉네임"></div>
-                    <div class="checkbox"><input type="checkbox" name="" id="checkbox-1"><label for="checkbox-1">개인정보 수집·이용에 동의합니다</label></div>
-                    <div class="checkbox"><input type="checkbox" name="" id="checkbox-2"><label for="checkbox-2">광고성 정보 수신에 동의합니다</label></div>
-                </form>
+            <div class="inputbox">
+              <input
+                type="text"
+                class="inputbox-inner inputname"
+                placeholder="닉네임"
+              />
             </div>
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                class="inputcover"
+                name=""
+                id="checkbox-1"
+              /><label class="boxinput" for="checkbox-1"
+                ><a href="/" class="linkterm">개인정보 수집·이용</a>에
+                동의합니다</label
+              >
+            </div>
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                class="inputcover"
+                name=""
+                id="checkbox-2"
+              /><label class="boxinput" for="checkbox-2"
+                ><a href="/" class="linkterm">광고성 정보 수신</a>에
+                동의합니다</label
+              >
+            </div>
+            <div class="buttons">
+              <button class="buttonsus">뉴스레터 무료로 구독하기</button>
+              <button class="buttonsus downloadapp">앱 다운로드하기</button>
+            </div>
+          </form>
         </div>
+      </div>
     </section>
-</body>
+    <nav class="catagory">
+      <div class="catagory-inner">
+        <a href="/" class="catagory-link">전체</a>
+        <a href="/" class="catagory-link"
+          ><span><span>⚖️</span>정치</span></a
+        >
+        <a href="/" class="catagory-link"
+          ><span><span>💰</span>경제</span></a
+        >
+        <a href="/" class="catagory-link"
+          ><span><span>🌐</span>세계</span></a
+        >
+        <a href="/" class="catagory-link"
+          ><span><span>🤖</span>테크</span></a
+        >
+        <a href="/" class="catagory-link"
+          ><span><span>💪</span>노동</span></a
+        >
+        <a href="/" class="catagory-link"
+          ><span><span>🌱</span>환경</span></a
+        >
+        <a href="/" class="catagory-link"
+          ><span><span>🤝</span>인권</span></a
+        >
+        <a href="/" class="catagory-link"
+          ><span><span>👥</span>사회</span></a
+        >
+        <a href="/" class="catagory-link"
+          ><span><span>🎞</span>문화</span></a
+        >
+        <a href="/" class="catagory-link"
+          ><span><span>🧘</span>라이프</span></a
+        >
+      </div>
+    </nav>
+  </body>
 </html>
