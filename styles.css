@@ -5,6 +5,9 @@ html {
 }
 
 /* Header */
+.container{
+    overflow: hidden;
+}
 .nav {
   padding: 3rem 5% 2.5rem;
   border-bottom: 1px solid #051619;
@@ -115,16 +118,17 @@ html {
   outline: auto;
 }
 .orangebox-inner .suscribe .checkbox .boxinput {
-  padding-left: 2rem;
   height: 16px;
   display: block;
   line-height: 16px;
   position: relative;
 }
 
-/* input[type="checkbox"] + label::before {
+input[type="checkbox"] + label::before {
   content: "\F26C";
-  font-family: "Bootstrap Icons";
+  font-family: "Bootstrap-icons";
+  padding-right: 1rem;
+  font-size: 16px;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -134,7 +138,7 @@ input[type="checkbox"]:checked + label::before {
 
 input[type="checkbox"] {
   display: none;
-} */
+}
 
 .orangebox .orangebox-inner .buttons {
   margin-top: 32px;
@@ -186,4 +190,113 @@ input[type="checkbox"] {
   box-sizing: border-box;
   font-size: 1.125rem;
   color: #051619;
+}
+/*NEWSFEED*/
+.newsfeed{
+    padding: 0 5%;
+    max-width:  1360px; 
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.newsfeed .newsfeed-contain{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-right:1px solid #000;
+}
+
+.newsfeed .newsfeed-contain .newslist{
+    border-left:1px solid #000;
+    border-bottom:1px solid #000;
+
+}
+
+.newsfeed .newsfeed-contain .newsimg{
+    padding-bottom: 75%;
+    height: 0;
+    border-bottom: 1px solid #000;
+    position: relative;
+
+}
+
+.newsfeed .newsfeed-contain .newsimg >img{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+
+.newsfeed .newsfeed-contain .newslist:hover .newsimg >img{
+    filter: grayscale(0);
+}
+.newsfeed .newsfeed-contain .newslist:hover .newsinfo{
+    background-color: #fff;
+}
+
+.newsfeed .newsfeed-contain .newslist .newsinfo{
+    padding: 1.5rem 1.75rem;
+}
+
+.newsfeed .newsfeed-contain .newslist .newsinfo .topicgenre{
+    display: inline;
+    padding-left: 10px;
+}
+
+.newsfeed .newsfeed-contain .newslist .newsinfo .newtitle{
+    font-weight: 700;
+    font-size: 1.25em;
+    padding-bottom: 0.5em;
+}
+
+.newsfeed .buttons-more{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.newsfeed .buttons-more .buttons-more-content{
+    text-align: center;
+    border: 1px solid #051619;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #051619;
+    background: #fff;
+    margin: 0;
+    padding: 12px 1.5rem 13px;
+    display: flex;
+    justify-content: center;
+    width: 19rem;
+}
+
+.banner{
+    margin-top: 10rem;
+}
+.banner .bannerhedge{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.banner .bannerimg .hedgehog-waiting{
+    width: 300px;
+    position: absolute;
+
+}
+
+.banner .bannerimg{
+    position: relative;
+    height: 90px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #ff6b00;
+}
+
+.banner .appdownlast{
+    padding: 1rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
 }
