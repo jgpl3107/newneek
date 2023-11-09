@@ -274,6 +274,7 @@ input[type="checkbox"] {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   display: block;
+  margin: 14rem 0 8rem;
 }
 
 .banner .bannerimg .hedgehog-waiting {
@@ -305,4 +306,39 @@ input[type="checkbox"] {
   width: 80px;
   height: 1px;
   background-color: #000;
+}
+
+
+/*footer*/
+
+.wrap .footcontainer .footcontainer-upper {
+    border-bottom: 1px solid #000;
+    margin-bottom: 4rem;
+}
+.wrap .footcontainer .footerlinetop{
+border-top: 1px solid #000;
+width: 100%;
+padding: 1.25rem 5%;
+}
+
+.wrap .footcontainer .minicontainer{
+    padding: 1.25rem 5%;
+}
+
+.wrap .footcontainer .footerlinetop .footerguidetxt{
+    font-size: 1.5rem;
+}
+
+.wrap .footcontainer .homelogolast{
+    display: inline-block;
+    max-width: 200px;
+    margin: 0 0 16px;
+}
+
+.footermenu{
+    display: flex;
+}
+
+.foot-menu{
+    list-style-type: none;
 }
