@@ -4,6 +4,9 @@ html {
   background-color: #eae7de;
 }
 
+b{
+    font-weight: 700;
+}
 /* Header */
 .container {
   overflow: hidden;
@@ -293,21 +296,54 @@ input[type="checkbox"] {
 }
 
 .banner .appdownlast {
-  padding: 1rem;
+  padding: 1.55rem;
   background: #fff;
   display: flex;
   justify-content: center;
   border-top: 1px solid #000;
   font-size: 1.125rem;
   font-weight: 700;
+  align-items: center;
 }
 .arrow-right {
   position: relative;
   width: 80px;
-  height: 1px;
+  height: 2px;
   background-color: #000;
+  margin-left: 1rem;
+  display: inline-block;
 }
 
+.arrow-right::before{
+    transform: rotate(50deg);
+    width: 17px;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    display: block;
+    content:'';
+    right:-2px;
+    bottom: 6px;
+    
+}
+.arrow-right::after{
+    transform: rotate(-50deg);
+    width: 17px;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    display: block;
+    content:'';
+    right:-2px;
+    bottom: -6px;
+    
+}
+
+.footerguidetxt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /*footer*/
 
@@ -323,10 +359,12 @@ padding: 1.25rem 5%;
 
 .wrap .footcontainer .minicontainer{
     padding: 1.25rem 5%;
+    display: flex;
 }
 
 .wrap .footcontainer .footerlinetop .footerguidetxt{
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .wrap .footcontainer .homelogolast{
@@ -335,10 +373,41 @@ padding: 1.25rem 5%;
     margin: 0 0 16px;
 }
 
-.footermenu{
-    display: flex;
+.wrap .footcontainer .homelogo{
+    width: 50%;
 }
 
+.footermenu{
+    display: flex;
+    width: 50%;
+
+}
+
+
 .foot-menu{
-    list-style-type: none;
+    /* list-style-type: none; */
+}
+
+.footermenulist{
+    flex: 1;
+    text-align: right;
+}
+
+.listspace{
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.contact-info{
+    padding: 7rem 5% 6rem;
+}
+
+.contact-info .contact-info-comment{
+    padding: 0 0 4px;
+    font-weight: 500;
+}
+
+.contact-info .contact-info-comment:nth-child(4){
+    font-size: 12px;
+    padding-top: 1rem;
 }
